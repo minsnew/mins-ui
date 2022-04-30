@@ -2,10 +2,12 @@
   "name": "mins-ui",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/minsnew/mins-ui.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minsnew/mins-ui.git"
+  },
   "author": "minsnew <minsnew@naver.com>",
   "license": "MIT",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -13,6 +15,22 @@
     "lerna": "^4.0.0"
   },
   "dependencies": {
+    "commander": "^9.2.0",
     "global": "^4.4.0"
-  }
+  },
+  "description": "react based ui components",
+  "bugs": {
+    "url": "https://github.com/minsnew/mins-ui/issues"
+  },
+  "homepage": "https://github.com/minsnew/mins-ui#readme",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "bin": {
+    "log-run": "bin/cli.js"
+  },
+  "files": [
+    "cli"
+  ]
 }
